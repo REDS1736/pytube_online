@@ -1,1 +1,9 @@
 <h1>Hi, Matteo!</h1>
+
+<form action="download" method="post">
+
+    {% csrf_token %}
+
+    URL: <input type="text" name="url"><br>
+    <input type="submit" value="Download starten">
+</form>
